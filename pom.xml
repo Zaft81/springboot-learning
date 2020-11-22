@@ -53,6 +53,7 @@
 
     <modules>
         <module>springboot-ch1-hello</module>
+        <module>springboot-swagger2</module>
     </modules>
 
     <!--<build>
