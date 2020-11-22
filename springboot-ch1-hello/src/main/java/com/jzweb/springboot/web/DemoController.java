@@ -16,7 +16,8 @@ import java.util.Map;
 public class DemoController
 {
     @RequestMapping("/list")
-    public Map<String, String> demo(){
+    public Map<String, String> demo()
+    {
         Map<String,String> map = new HashMap<>();
         map.put("message"," springboot ");
         return map;
