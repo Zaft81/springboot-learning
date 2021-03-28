@@ -16,7 +16,7 @@ import java.util.Map;
  * @version 1.0
  * @date 11/22/2020
  */
-@Api()
+@Api(tags = "接口用例")
 @RestController
 @RequestMapping("/api/login")
 public class LoginController
@@ -30,8 +30,10 @@ public class LoginController
         return new HashMap<>();
     }
 
+    @ApiOperation(value = "菜单",notes = "获取菜单",produces = "application/json")
     @RequestMapping(value = "/menu", method = RequestMethod.GET)
     public Map<String, String> menu(){
         return new HashMap<>();
     }
+
 }

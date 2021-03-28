@@ -20,6 +20,7 @@ public class DemoController
     {
         Map<String,String> map = new HashMap<>();
         map.put("message"," springboot ");
+        map.put("loginName"," springboot2 ");
         return map;
     }
 }
