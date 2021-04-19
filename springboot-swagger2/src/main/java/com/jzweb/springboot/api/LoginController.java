@@ -27,7 +27,9 @@ public class LoginController
     @RequestMapping(value = "/in", method = RequestMethod.POST)
     public Map<String, String> login(String uname,String pwd)
     {
-        return new HashMap<>();
+        Map<String, String> map = new HashMap<>();
+        map.put("uname",uname);
+        return map;
     }
 
     @ApiOperation(value = "菜单",notes = "获取菜单",produces = "application/json")
