@@ -29,7 +29,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.3.6.RELEASE</version>
+                <version>2.4.5.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -40,6 +40,10 @@
                 <version>${druid.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+            </dependency>
 
             <dependency>
                 <groupId>com.spring4all</groupId>
@@ -54,6 +58,7 @@
     <modules>
         <module>springboot-ch1-hello</module>
         <module>springboot-swagger2</module>
+        <module>springboot-shutdown</module>
     </modules>
 
     <!--<build>
